@@ -8,24 +8,156 @@
 
 /* Begin PBXBuildFile section */
 		4D77E12F20EAB54B004D8DC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E12E20EAB54B004D8DC1 /* AppDelegate.m */; };
-		4D77E13220EAB54B004D8DC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E13120EAB54B004D8DC1 /* ViewController.m */; };
-		4D77E13520EAB54B004D8DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E13320EAB54B004D8DC1 /* Main.storyboard */; };
 		4D77E13720EAB54F004D8DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E13620EAB54F004D8DC1 /* Assets.xcassets */; };
 		4D77E13A20EAB54F004D8DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E13820EAB54F004D8DC1 /* LaunchScreen.storyboard */; };
 		4D77E13D20EAB54F004D8DC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E13C20EAB54F004D8DC1 /* main.m */; };
+		4D77E1D120EAB659004D8DC1 /* IntercomManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E15720EAB658004D8DC1 /* IntercomManager.m */; };
+		4D77E1D220EAB659004D8DC1 /* IntercomDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E15920EAB658004D8DC1 /* IntercomDetailViewController.m */; };
+		4D77E1D320EAB659004D8DC1 /* IntercomDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E15A20EAB658004D8DC1 /* IntercomDetailViewController.xib */; };
+		4D77E1D420EAB659004D8DC1 /* SettingsButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E15E20EAB658004D8DC1 /* SettingsButtonCell.m */; };
+		4D77E1D520EAB659004D8DC1 /* SettingsButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E15F20EAB658004D8DC1 /* SettingsButtonCell.xib */; };
+		4D77E1D620EAB659004D8DC1 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E16120EAB658004D8DC1 /* SettingsViewController.m */; };
+		4D77E1D720EAB659004D8DC1 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E16220EAB658004D8DC1 /* SettingsViewController.xib */; };
+		4D77E1D820EAB659004D8DC1 /* SettingsTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E16520EAB658004D8DC1 /* SettingsTextFieldCell.m */; };
+		4D77E1D920EAB659004D8DC1 /* SettingsTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E16620EAB658004D8DC1 /* SettingsTextFieldCell.xib */; };
+		4D77E1DA20EAB659004D8DC1 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E16920EAB658004D8DC1 /* MainTabBarController.m */; };
+		4D77E1DB20EAB659004D8DC1 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E16A20EAB658004D8DC1 /* MainTabBarController.xib */; };
+		4D77E1DC20EAB659004D8DC1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E16D20EAB658004D8DC1 /* MainViewController.m */; };
+		4D77E1DD20EAB659004D8DC1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E16F20EAB658004D8DC1 /* MainViewController.xib */; };
+		4D77E1DE20EAB659004D8DC1 /* IntercomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E17320EAB658004D8DC1 /* IntercomObject.m */; };
+		4D77E1DF20EAB659004D8DC1 /* MyIntercomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E17620EAB658004D8DC1 /* MyIntercomTableViewCell.m */; };
+		4D77E1E020EAB659004D8DC1 /* MyIntercomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E17720EAB658004D8DC1 /* MyIntercomTableViewCell.xib */; };
+		4D77E1E120EAB659004D8DC1 /* MyIntercomTableViewCellShort.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E17820EAB658004D8DC1 /* MyIntercomTableViewCellShort.xib */; };
+		4D77E1E220EAB659004D8DC1 /* MyIntercomsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E17A20EAB658004D8DC1 /* MyIntercomsViewController.m */; };
+		4D77E1E320EAB659004D8DC1 /* MyIntercomsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E17B20EAB658004D8DC1 /* MyIntercomsViewController.xib */; };
+		4D77E1E420EAB659004D8DC1 /* ActivitySpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E17F20EAB658004D8DC1 /* ActivitySpinner.m */; };
+		4D77E1E520EAB659004D8DC1 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E18220EAB658004D8DC1 /* Categories.m */; };
+		4D77E1E620EAB659004D8DC1 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E18520EAB658004D8DC1 /* Constants.m */; };
+		4D77E1E720EAB659004D8DC1 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E18820EAB658004D8DC1 /* CustomAlertView.m */; };
+		4D77E1E820EAB659004D8DC1 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E18920EAB658004D8DC1 /* CustomAlertView.xib */; };
+		4D77E1EA20EAB659004D8DC1 /* ErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E18D20EAB658004D8DC1 /* ErrorHandler.m */; };
+		4D77E1EB20EAB659004D8DC1 /* Mapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E19020EAB658004D8DC1 /* Mapper.m */; };
+		4D77E1EC20EAB659004D8DC1 /* NetworkLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E19320EAB658004D8DC1 /* NetworkLoader.m */; };
+		4D77E1EE20EAB659004D8DC1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E19920EAB658004D8DC1 /* Reachability.m */; };
+		4D77E1EF20EAB659004D8DC1 /* alert.aif in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E19B20EAB658004D8DC1 /* alert.aif */; };
+		4D77E1F020EAB659004D8DC1 /* alert.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E19C20EAB658004D8DC1 /* alert.aiff */; };
+		4D77E1F120EAB659004D8DC1 /* incomingCall.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E19D20EAB658004D8DC1 /* incomingCall.m4r */; };
+		4D77E1F220EAB659004D8DC1 /* DistrictInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1A020EAB659004D8DC1 /* DistrictInfoViewController.m */; };
+		4D77E1F320EAB659004D8DC1 /* DistrictInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E1A120EAB659004D8DC1 /* DistrictInfoViewController.xib */; };
+		4D77E1F420EAB659004D8DC1 /* DocumentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1A520EAB659004D8DC1 /* DocumentCell.m */; };
+		4D77E1F520EAB659004D8DC1 /* DocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E1A620EAB659004D8DC1 /* DocumentCell.xib */; };
+		4D77E1F620EAB659004D8DC1 /* DocumentsPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1A820EAB659004D8DC1 /* DocumentsPage.m */; };
+		4D77E1F720EAB659004D8DC1 /* DistrictInfoPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1AB20EAB659004D8DC1 /* DistrictInfoPage.m */; };
+		4D77E1F820EAB659004D8DC1 /* DistrictInfoNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1AE20EAB659004D8DC1 /* DistrictInfoNewsCell.m */; };
+		4D77E1F920EAB659004D8DC1 /* DistrictInfoNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E1AF20EAB659004D8DC1 /* DistrictInfoNewsCell.xib */; };
+		4D77E1FA20EAB659004D8DC1 /* DistrictManagementButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1B320EAB659004D8DC1 /* DistrictManagementButtonCell.m */; };
+		4D77E1FB20EAB659004D8DC1 /* DistrictManagementButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E1B420EAB659004D8DC1 /* DistrictManagementButtonCell.xib */; };
+		4D77E1FC20EAB659004D8DC1 /* DistrictManagementPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1B620EAB659004D8DC1 /* DistrictManagementPage.m */; };
+		4D77E1FD20EAB659004D8DC1 /* AccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1BA20EAB659004D8DC1 /* AccountManager.m */; };
+		4D77E20020EAB659004D8DC1 /* SignInFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1C220EAB659004D8DC1 /* SignInFormView.m */; };
+		4D77E20120EAB659004D8DC1 /* SignInFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E1C320EAB659004D8DC1 /* SignInFormView.xib */; };
+		4D77E20220EAB659004D8DC1 /* ResetAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1C620EAB659004D8DC1 /* ResetAccessViewController.m */; };
+		4D77E20320EAB659004D8DC1 /* ResetAccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E1C720EAB659004D8DC1 /* ResetAccessViewController.xib */; };
+		4D77E20420EAB659004D8DC1 /* SipAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1CA20EAB659004D8DC1 /* SipAccount.m */; };
+		4D77E20520EAB659004D8DC1 /* UserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1CC20EAB659004D8DC1 /* UserAccount.m */; };
+		4D77E20620EAB659004D8DC1 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D77E1CF20EAB659004D8DC1 /* SignInViewController.m */; };
+		4D77E20720EAB659004D8DC1 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D77E1D020EAB659004D8DC1 /* SignInViewController.xib */; };
+		D1B65B4D86AD682374D9FD2D /* Pods_SmartHome_Promo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8F22380D26AD6C94A6D45 /* Pods_SmartHome_Promo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D77E12A20EAB54B004D8DC1 /* SmartHome Promo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartHome Promo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D77E12D20EAB54B004D8DC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D77E12E20EAB54B004D8DC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4D77E13020EAB54B004D8DC1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4D77E13120EAB54B004D8DC1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4D77E13420EAB54B004D8DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D77E13620EAB54F004D8DC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D77E13920EAB54F004D8DC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D77E13B20EAB54F004D8DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D77E13C20EAB54F004D8DC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D77E15620EAB658004D8DC1 /* IntercomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntercomManager.h; sourceTree = "<group>"; };
+		4D77E15720EAB658004D8DC1 /* IntercomManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntercomManager.m; sourceTree = "<group>"; };
+		4D77E15820EAB658004D8DC1 /* IntercomDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntercomDetailViewController.h; sourceTree = "<group>"; };
+		4D77E15920EAB658004D8DC1 /* IntercomDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntercomDetailViewController.m; sourceTree = "<group>"; };
+		4D77E15A20EAB658004D8DC1 /* IntercomDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntercomDetailViewController.xib; sourceTree = "<group>"; };
+		4D77E15D20EAB658004D8DC1 /* SettingsButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsButtonCell.h; sourceTree = "<group>"; };
+		4D77E15E20EAB658004D8DC1 /* SettingsButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsButtonCell.m; sourceTree = "<group>"; };
+		4D77E15F20EAB658004D8DC1 /* SettingsButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsButtonCell.xib; sourceTree = "<group>"; };
+		4D77E16020EAB658004D8DC1 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		4D77E16120EAB658004D8DC1 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		4D77E16220EAB658004D8DC1 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		4D77E16420EAB658004D8DC1 /* SettingsTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTextFieldCell.h; sourceTree = "<group>"; };
+		4D77E16520EAB658004D8DC1 /* SettingsTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTextFieldCell.m; sourceTree = "<group>"; };
+		4D77E16620EAB658004D8DC1 /* SettingsTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTextFieldCell.xib; sourceTree = "<group>"; };
+		4D77E16820EAB658004D8DC1 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		4D77E16920EAB658004D8DC1 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		4D77E16A20EAB658004D8DC1 /* MainTabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
+		4D77E16D20EAB658004D8DC1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4D77E16E20EAB658004D8DC1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4D77E16F20EAB658004D8DC1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		4D77E17220EAB658004D8DC1 /* IntercomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntercomObject.h; sourceTree = "<group>"; };
+		4D77E17320EAB658004D8DC1 /* IntercomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntercomObject.m; sourceTree = "<group>"; };
+		4D77E17520EAB658004D8DC1 /* MyIntercomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyIntercomTableViewCell.h; sourceTree = "<group>"; };
+		4D77E17620EAB658004D8DC1 /* MyIntercomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyIntercomTableViewCell.m; sourceTree = "<group>"; };
+		4D77E17720EAB658004D8DC1 /* MyIntercomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyIntercomTableViewCell.xib; sourceTree = "<group>"; };
+		4D77E17820EAB658004D8DC1 /* MyIntercomTableViewCellShort.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyIntercomTableViewCellShort.xib; sourceTree = "<group>"; };
+		4D77E17920EAB658004D8DC1 /* MyIntercomsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyIntercomsViewController.h; sourceTree = "<group>"; };
+		4D77E17A20EAB658004D8DC1 /* MyIntercomsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyIntercomsViewController.m; sourceTree = "<group>"; };
+		4D77E17B20EAB658004D8DC1 /* MyIntercomsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyIntercomsViewController.xib; sourceTree = "<group>"; };
+		4D77E17E20EAB658004D8DC1 /* ActivitySpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitySpinner.h; sourceTree = "<group>"; };
+		4D77E17F20EAB658004D8DC1 /* ActivitySpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitySpinner.m; sourceTree = "<group>"; };
+		4D77E18120EAB658004D8DC1 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		4D77E18220EAB658004D8DC1 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categories.m; sourceTree = "<group>"; };
+		4D77E18420EAB658004D8DC1 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4D77E18520EAB658004D8DC1 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		4D77E18720EAB658004D8DC1 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		4D77E18820EAB658004D8DC1 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		4D77E18920EAB658004D8DC1 /* CustomAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
+		4D77E18C20EAB658004D8DC1 /* ErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandler.h; sourceTree = "<group>"; };
+		4D77E18D20EAB658004D8DC1 /* ErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandler.m; sourceTree = "<group>"; };
+		4D77E18F20EAB658004D8DC1 /* Mapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapper.h; sourceTree = "<group>"; };
+		4D77E19020EAB658004D8DC1 /* Mapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapper.m; sourceTree = "<group>"; };
+		4D77E19220EAB658004D8DC1 /* NetworkLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkLoader.h; sourceTree = "<group>"; };
+		4D77E19320EAB658004D8DC1 /* NetworkLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkLoader.m; sourceTree = "<group>"; };
+		4D77E19820EAB658004D8DC1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4D77E19920EAB658004D8DC1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4D77E19B20EAB658004D8DC1 /* alert.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = alert.aif; sourceTree = "<group>"; };
+		4D77E19C20EAB658004D8DC1 /* alert.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = alert.aiff; sourceTree = "<group>"; };
+		4D77E19D20EAB658004D8DC1 /* incomingCall.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = incomingCall.m4r; sourceTree = "<group>"; };
+		4D77E19F20EAB659004D8DC1 /* DistrictInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistrictInfoViewController.h; sourceTree = "<group>"; };
+		4D77E1A020EAB659004D8DC1 /* DistrictInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistrictInfoViewController.m; sourceTree = "<group>"; };
+		4D77E1A120EAB659004D8DC1 /* DistrictInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistrictInfoViewController.xib; sourceTree = "<group>"; };
+		4D77E1A420EAB659004D8DC1 /* DocumentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentCell.h; sourceTree = "<group>"; };
+		4D77E1A520EAB659004D8DC1 /* DocumentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentCell.m; sourceTree = "<group>"; };
+		4D77E1A620EAB659004D8DC1 /* DocumentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocumentCell.xib; sourceTree = "<group>"; };
+		4D77E1A720EAB659004D8DC1 /* DocumentsPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsPage.h; sourceTree = "<group>"; };
+		4D77E1A820EAB659004D8DC1 /* DocumentsPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentsPage.m; sourceTree = "<group>"; };
+		4D77E1AA20EAB659004D8DC1 /* DistrictInfoPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistrictInfoPage.h; sourceTree = "<group>"; };
+		4D77E1AB20EAB659004D8DC1 /* DistrictInfoPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistrictInfoPage.m; sourceTree = "<group>"; };
+		4D77E1AD20EAB659004D8DC1 /* DistrictInfoNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistrictInfoNewsCell.h; sourceTree = "<group>"; };
+		4D77E1AE20EAB659004D8DC1 /* DistrictInfoNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistrictInfoNewsCell.m; sourceTree = "<group>"; };
+		4D77E1AF20EAB659004D8DC1 /* DistrictInfoNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistrictInfoNewsCell.xib; sourceTree = "<group>"; };
+		4D77E1B220EAB659004D8DC1 /* DistrictManagementButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistrictManagementButtonCell.h; sourceTree = "<group>"; };
+		4D77E1B320EAB659004D8DC1 /* DistrictManagementButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistrictManagementButtonCell.m; sourceTree = "<group>"; };
+		4D77E1B420EAB659004D8DC1 /* DistrictManagementButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistrictManagementButtonCell.xib; sourceTree = "<group>"; };
+		4D77E1B520EAB659004D8DC1 /* DistrictManagementPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistrictManagementPage.h; sourceTree = "<group>"; };
+		4D77E1B620EAB659004D8DC1 /* DistrictManagementPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistrictManagementPage.m; sourceTree = "<group>"; };
+		4D77E1B920EAB659004D8DC1 /* AccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountManager.h; sourceTree = "<group>"; };
+		4D77E1BA20EAB659004D8DC1 /* AccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountManager.m; sourceTree = "<group>"; };
+		4D77E1C120EAB659004D8DC1 /* SignInFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInFormView.h; sourceTree = "<group>"; };
+		4D77E1C220EAB659004D8DC1 /* SignInFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInFormView.m; sourceTree = "<group>"; };
+		4D77E1C320EAB659004D8DC1 /* SignInFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInFormView.xib; sourceTree = "<group>"; };
+		4D77E1C520EAB659004D8DC1 /* ResetAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetAccessViewController.h; sourceTree = "<group>"; };
+		4D77E1C620EAB659004D8DC1 /* ResetAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetAccessViewController.m; sourceTree = "<group>"; };
+		4D77E1C720EAB659004D8DC1 /* ResetAccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResetAccessViewController.xib; sourceTree = "<group>"; };
+		4D77E1C920EAB659004D8DC1 /* SipAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SipAccount.h; sourceTree = "<group>"; };
+		4D77E1CA20EAB659004D8DC1 /* SipAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SipAccount.m; sourceTree = "<group>"; };
+		4D77E1CB20EAB659004D8DC1 /* UserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccount.h; sourceTree = "<group>"; };
+		4D77E1CC20EAB659004D8DC1 /* UserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccount.m; sourceTree = "<group>"; };
+		4D77E1CE20EAB659004D8DC1 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		4D77E1CF20EAB659004D8DC1 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		4D77E1D020EAB659004D8DC1 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		65F8F22380D26AD6C94A6D45 /* Pods_SmartHome_Promo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHome_Promo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1EDFDDE814E04A4B69A1B65 /* Pods-SmartHome Promo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome Promo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHome Promo/Pods-SmartHome Promo.debug.xcconfig"; sourceTree = "<group>"; };
+		D4601099D3E112E20ABFFE78 /* Pods-SmartHome Promo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome Promo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHome Promo/Pods-SmartHome Promo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +165,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B65B4D86AD682374D9FD2D /* Pods_SmartHome_Promo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E2561D92CF82592574783FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F8F22380D26AD6C94A6D45 /* Pods_SmartHome_Promo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D77E12120EAB54B004D8DC1 = {
 			isa = PBXGroup;
 			children = (
 				4D77E12C20EAB54B004D8DC1 /* SmartHome Promo */,
 				4D77E12B20EAB54B004D8DC1 /* Products */,
+				5956C39B6A14ABF499B0336F /* Pods */,
+				0E2561D92CF82592574783FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +203,367 @@
 			children = (
 				4D77E12D20EAB54B004D8DC1 /* AppDelegate.h */,
 				4D77E12E20EAB54B004D8DC1 /* AppDelegate.m */,
-				4D77E13020EAB54B004D8DC1 /* ViewController.h */,
-				4D77E13120EAB54B004D8DC1 /* ViewController.m */,
-				4D77E13320EAB54B004D8DC1 /* Main.storyboard */,
+				4D77E16B20EAB658004D8DC1 /* Main View Controller */,
+				4D77E16720EAB658004D8DC1 /* Main Tab Bar */,
+				4D77E17020EAB658004D8DC1 /* My Intercoms Page */,
+				4D77E19E20EAB659004D8DC1 /* District Info Pages */,
+				4D77E15420EAB658004D8DC1 /* Intercom Detail Page */,
+				4D77E1B720EAB659004D8DC1 /* Login Page */,
+				4D77E15B20EAB658004D8DC1 /* Settings Page */,
+				4D77E17C20EAB658004D8DC1 /* Helpers */,
 				4D77E13620EAB54F004D8DC1 /* Assets.xcassets */,
 				4D77E13820EAB54F004D8DC1 /* LaunchScreen.storyboard */,
 				4D77E13B20EAB54F004D8DC1 /* Info.plist */,
 				4D77E13C20EAB54F004D8DC1 /* main.m */,
 			);
 			path = "SmartHome Promo";
+			sourceTree = "<group>";
+		};
+		4D77E15420EAB658004D8DC1 /* Intercom Detail Page */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E15520EAB658004D8DC1 /* Intercom Manager */,
+				4D77E15820EAB658004D8DC1 /* IntercomDetailViewController.h */,
+				4D77E15920EAB658004D8DC1 /* IntercomDetailViewController.m */,
+				4D77E15A20EAB658004D8DC1 /* IntercomDetailViewController.xib */,
+			);
+			path = "Intercom Detail Page";
+			sourceTree = "<group>";
+		};
+		4D77E15520EAB658004D8DC1 /* Intercom Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E15620EAB658004D8DC1 /* IntercomManager.h */,
+				4D77E15720EAB658004D8DC1 /* IntercomManager.m */,
+			);
+			path = "Intercom Manager";
+			sourceTree = "<group>";
+		};
+		4D77E15B20EAB658004D8DC1 /* Settings Page */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E15C20EAB658004D8DC1 /* Button Cell */,
+				4D77E16020EAB658004D8DC1 /* SettingsViewController.h */,
+				4D77E16120EAB658004D8DC1 /* SettingsViewController.m */,
+				4D77E16220EAB658004D8DC1 /* SettingsViewController.xib */,
+				4D77E16320EAB658004D8DC1 /* Text Field Cell */,
+			);
+			path = "Settings Page";
+			sourceTree = "<group>";
+		};
+		4D77E15C20EAB658004D8DC1 /* Button Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E15D20EAB658004D8DC1 /* SettingsButtonCell.h */,
+				4D77E15E20EAB658004D8DC1 /* SettingsButtonCell.m */,
+				4D77E15F20EAB658004D8DC1 /* SettingsButtonCell.xib */,
+			);
+			path = "Button Cell";
+			sourceTree = "<group>";
+		};
+		4D77E16320EAB658004D8DC1 /* Text Field Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E16420EAB658004D8DC1 /* SettingsTextFieldCell.h */,
+				4D77E16520EAB658004D8DC1 /* SettingsTextFieldCell.m */,
+				4D77E16620EAB658004D8DC1 /* SettingsTextFieldCell.xib */,
+			);
+			path = "Text Field Cell";
+			sourceTree = "<group>";
+		};
+		4D77E16720EAB658004D8DC1 /* Main Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E16820EAB658004D8DC1 /* MainTabBarController.h */,
+				4D77E16920EAB658004D8DC1 /* MainTabBarController.m */,
+				4D77E16A20EAB658004D8DC1 /* MainTabBarController.xib */,
+			);
+			path = "Main Tab Bar";
+			sourceTree = "<group>";
+		};
+		4D77E16B20EAB658004D8DC1 /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E16E20EAB658004D8DC1 /* MainViewController.h */,
+				4D77E16D20EAB658004D8DC1 /* MainViewController.m */,
+				4D77E16F20EAB658004D8DC1 /* MainViewController.xib */,
+			);
+			path = "Main View Controller";
+			sourceTree = "<group>";
+		};
+		4D77E17020EAB658004D8DC1 /* My Intercoms Page */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E17120EAB658004D8DC1 /* Intercom Model */,
+				4D77E17420EAB658004D8DC1 /* My Intercom Cell */,
+				4D77E17920EAB658004D8DC1 /* MyIntercomsViewController.h */,
+				4D77E17A20EAB658004D8DC1 /* MyIntercomsViewController.m */,
+				4D77E17B20EAB658004D8DC1 /* MyIntercomsViewController.xib */,
+			);
+			path = "My Intercoms Page";
+			sourceTree = "<group>";
+		};
+		4D77E17120EAB658004D8DC1 /* Intercom Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E17220EAB658004D8DC1 /* IntercomObject.h */,
+				4D77E17320EAB658004D8DC1 /* IntercomObject.m */,
+			);
+			path = "Intercom Model";
+			sourceTree = "<group>";
+		};
+		4D77E17420EAB658004D8DC1 /* My Intercom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E17520EAB658004D8DC1 /* MyIntercomTableViewCell.h */,
+				4D77E17620EAB658004D8DC1 /* MyIntercomTableViewCell.m */,
+				4D77E17720EAB658004D8DC1 /* MyIntercomTableViewCell.xib */,
+				4D77E17820EAB658004D8DC1 /* MyIntercomTableViewCellShort.xib */,
+			);
+			path = "My Intercom Cell";
+			sourceTree = "<group>";
+		};
+		4D77E17C20EAB658004D8DC1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E17D20EAB658004D8DC1 /* Activity Spinner */,
+				4D77E18020EAB658004D8DC1 /* Categories */,
+				4D77E18320EAB658004D8DC1 /* Constants */,
+				4D77E18620EAB658004D8DC1 /* Custom Alert View */,
+				4D77E18B20EAB658004D8DC1 /* Error Handler */,
+				4D77E18E20EAB658004D8DC1 /* Mapper */,
+				4D77E19120EAB658004D8DC1 /* Network Loader */,
+				4D77E19720EAB658004D8DC1 /* Reachability */,
+				4D77E19A20EAB658004D8DC1 /* Sounds */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4D77E17D20EAB658004D8DC1 /* Activity Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E17E20EAB658004D8DC1 /* ActivitySpinner.h */,
+				4D77E17F20EAB658004D8DC1 /* ActivitySpinner.m */,
+			);
+			path = "Activity Spinner";
+			sourceTree = "<group>";
+		};
+		4D77E18020EAB658004D8DC1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E18120EAB658004D8DC1 /* Categories.h */,
+				4D77E18220EAB658004D8DC1 /* Categories.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4D77E18320EAB658004D8DC1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E18420EAB658004D8DC1 /* Constants.h */,
+				4D77E18520EAB658004D8DC1 /* Constants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4D77E18620EAB658004D8DC1 /* Custom Alert View */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E18720EAB658004D8DC1 /* CustomAlertView.h */,
+				4D77E18820EAB658004D8DC1 /* CustomAlertView.m */,
+				4D77E18920EAB658004D8DC1 /* CustomAlertView.xib */,
+			);
+			path = "Custom Alert View";
+			sourceTree = "<group>";
+		};
+		4D77E18B20EAB658004D8DC1 /* Error Handler */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E18C20EAB658004D8DC1 /* ErrorHandler.h */,
+				4D77E18D20EAB658004D8DC1 /* ErrorHandler.m */,
+			);
+			path = "Error Handler";
+			sourceTree = "<group>";
+		};
+		4D77E18E20EAB658004D8DC1 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E18F20EAB658004D8DC1 /* Mapper.h */,
+				4D77E19020EAB658004D8DC1 /* Mapper.m */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		4D77E19120EAB658004D8DC1 /* Network Loader */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E19220EAB658004D8DC1 /* NetworkLoader.h */,
+				4D77E19320EAB658004D8DC1 /* NetworkLoader.m */,
+			);
+			path = "Network Loader";
+			sourceTree = "<group>";
+		};
+		4D77E19720EAB658004D8DC1 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E19820EAB658004D8DC1 /* Reachability.h */,
+				4D77E19920EAB658004D8DC1 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		4D77E19A20EAB658004D8DC1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E19B20EAB658004D8DC1 /* alert.aif */,
+				4D77E19C20EAB658004D8DC1 /* alert.aiff */,
+				4D77E19D20EAB658004D8DC1 /* incomingCall.m4r */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		4D77E19E20EAB659004D8DC1 /* District Info Pages */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E19F20EAB659004D8DC1 /* DistrictInfoViewController.h */,
+				4D77E1A020EAB659004D8DC1 /* DistrictInfoViewController.m */,
+				4D77E1A120EAB659004D8DC1 /* DistrictInfoViewController.xib */,
+				4D77E1A220EAB659004D8DC1 /* Documents Page */,
+				4D77E1A920EAB659004D8DC1 /* Info Page */,
+				4D77E1B020EAB659004D8DC1 /* Management Page */,
+			);
+			path = "District Info Pages";
+			sourceTree = "<group>";
+		};
+		4D77E1A220EAB659004D8DC1 /* Documents Page */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1A320EAB659004D8DC1 /* Document Cell */,
+				4D77E1A720EAB659004D8DC1 /* DocumentsPage.h */,
+				4D77E1A820EAB659004D8DC1 /* DocumentsPage.m */,
+			);
+			path = "Documents Page";
+			sourceTree = "<group>";
+		};
+		4D77E1A320EAB659004D8DC1 /* Document Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1A420EAB659004D8DC1 /* DocumentCell.h */,
+				4D77E1A520EAB659004D8DC1 /* DocumentCell.m */,
+				4D77E1A620EAB659004D8DC1 /* DocumentCell.xib */,
+			);
+			path = "Document Cell";
+			sourceTree = "<group>";
+		};
+		4D77E1A920EAB659004D8DC1 /* Info Page */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1AA20EAB659004D8DC1 /* DistrictInfoPage.h */,
+				4D77E1AB20EAB659004D8DC1 /* DistrictInfoPage.m */,
+				4D77E1AC20EAB659004D8DC1 /* News Cell */,
+			);
+			path = "Info Page";
+			sourceTree = "<group>";
+		};
+		4D77E1AC20EAB659004D8DC1 /* News Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1AD20EAB659004D8DC1 /* DistrictInfoNewsCell.h */,
+				4D77E1AE20EAB659004D8DC1 /* DistrictInfoNewsCell.m */,
+				4D77E1AF20EAB659004D8DC1 /* DistrictInfoNewsCell.xib */,
+			);
+			path = "News Cell";
+			sourceTree = "<group>";
+		};
+		4D77E1B020EAB659004D8DC1 /* Management Page */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1B120EAB659004D8DC1 /* Button Cell */,
+				4D77E1B520EAB659004D8DC1 /* DistrictManagementPage.h */,
+				4D77E1B620EAB659004D8DC1 /* DistrictManagementPage.m */,
+			);
+			path = "Management Page";
+			sourceTree = "<group>";
+		};
+		4D77E1B120EAB659004D8DC1 /* Button Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1B220EAB659004D8DC1 /* DistrictManagementButtonCell.h */,
+				4D77E1B320EAB659004D8DC1 /* DistrictManagementButtonCell.m */,
+				4D77E1B420EAB659004D8DC1 /* DistrictManagementButtonCell.xib */,
+			);
+			path = "Button Cell";
+			sourceTree = "<group>";
+		};
+		4D77E1B720EAB659004D8DC1 /* Login Page */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1BB20EAB659004D8DC1 /* Form */,
+				4D77E1CD20EAB659004D8DC1 /* Login View Controller */,
+				4D77E1B820EAB659004D8DC1 /* Account Manager */,
+				4D77E1C420EAB659004D8DC1 /* Reset Access */,
+				4D77E1C820EAB659004D8DC1 /* User Data Model */,
+			);
+			path = "Login Page";
+			sourceTree = "<group>";
+		};
+		4D77E1B820EAB659004D8DC1 /* Account Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1B920EAB659004D8DC1 /* AccountManager.h */,
+				4D77E1BA20EAB659004D8DC1 /* AccountManager.m */,
+			);
+			path = "Account Manager";
+			sourceTree = "<group>";
+		};
+		4D77E1BB20EAB659004D8DC1 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1C120EAB659004D8DC1 /* SignInFormView.h */,
+				4D77E1C220EAB659004D8DC1 /* SignInFormView.m */,
+				4D77E1C320EAB659004D8DC1 /* SignInFormView.xib */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		4D77E1C420EAB659004D8DC1 /* Reset Access */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1C520EAB659004D8DC1 /* ResetAccessViewController.h */,
+				4D77E1C620EAB659004D8DC1 /* ResetAccessViewController.m */,
+				4D77E1C720EAB659004D8DC1 /* ResetAccessViewController.xib */,
+			);
+			path = "Reset Access";
+			sourceTree = "<group>";
+		};
+		4D77E1C820EAB659004D8DC1 /* User Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1C920EAB659004D8DC1 /* SipAccount.h */,
+				4D77E1CA20EAB659004D8DC1 /* SipAccount.m */,
+				4D77E1CB20EAB659004D8DC1 /* UserAccount.h */,
+				4D77E1CC20EAB659004D8DC1 /* UserAccount.m */,
+			);
+			path = "User Data Model";
+			sourceTree = "<group>";
+		};
+		4D77E1CD20EAB659004D8DC1 /* Login View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D77E1CE20EAB659004D8DC1 /* SignInViewController.h */,
+				4D77E1CF20EAB659004D8DC1 /* SignInViewController.m */,
+				4D77E1D020EAB659004D8DC1 /* SignInViewController.xib */,
+			);
+			path = "Login View Controller";
+			sourceTree = "<group>";
+		};
+		5956C39B6A14ABF499B0336F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1EDFDDE814E04A4B69A1B65 /* Pods-SmartHome Promo.debug.xcconfig */,
+				D4601099D3E112E20ABFFE78 /* Pods-SmartHome Promo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +573,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D77E14020EAB54F004D8DC1 /* Build configuration list for PBXNativeTarget "SmartHome Promo" */;
 			buildPhases = (
+				C473EAFB5124D0A5891DA77D /* [CP] Check Pods Manifest.lock */,
 				4D77E12620EAB54B004D8DC1 /* Sources */,
 				4D77E12720EAB54B004D8DC1 /* Frameworks */,
 				4D77E12820EAB54B004D8DC1 /* Resources */,
+				827461071F658ECEACB3FFC7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,36 +625,120 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D77E1F320EAB659004D8DC1 /* DistrictInfoViewController.xib in Resources */,
+				4D77E20320EAB659004D8DC1 /* ResetAccessViewController.xib in Resources */,
+				4D77E1E020EAB659004D8DC1 /* MyIntercomTableViewCell.xib in Resources */,
+				4D77E1E320EAB659004D8DC1 /* MyIntercomsViewController.xib in Resources */,
+				4D77E1E820EAB659004D8DC1 /* CustomAlertView.xib in Resources */,
+				4D77E1DB20EAB659004D8DC1 /* MainTabBarController.xib in Resources */,
+				4D77E1E120EAB659004D8DC1 /* MyIntercomTableViewCellShort.xib in Resources */,
+				4D77E20120EAB659004D8DC1 /* SignInFormView.xib in Resources */,
+				4D77E20720EAB659004D8DC1 /* SignInViewController.xib in Resources */,
+				4D77E1F920EAB659004D8DC1 /* DistrictInfoNewsCell.xib in Resources */,
+				4D77E1D520EAB659004D8DC1 /* SettingsButtonCell.xib in Resources */,
 				4D77E13A20EAB54F004D8DC1 /* LaunchScreen.storyboard in Resources */,
+				4D77E1DD20EAB659004D8DC1 /* MainViewController.xib in Resources */,
+				4D77E1F020EAB659004D8DC1 /* alert.aiff in Resources */,
 				4D77E13720EAB54F004D8DC1 /* Assets.xcassets in Resources */,
-				4D77E13520EAB54B004D8DC1 /* Main.storyboard in Resources */,
+				4D77E1D320EAB659004D8DC1 /* IntercomDetailViewController.xib in Resources */,
+				4D77E1FB20EAB659004D8DC1 /* DistrictManagementButtonCell.xib in Resources */,
+				4D77E1D920EAB659004D8DC1 /* SettingsTextFieldCell.xib in Resources */,
+				4D77E1F120EAB659004D8DC1 /* incomingCall.m4r in Resources */,
+				4D77E1D720EAB659004D8DC1 /* SettingsViewController.xib in Resources */,
+				4D77E1EF20EAB659004D8DC1 /* alert.aif in Resources */,
+				4D77E1F520EAB659004D8DC1 /* DocumentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		827461071F658ECEACB3FFC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SmartHome Promo/Pods-SmartHome Promo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/SHSPhoneComponent/SHSPhoneComponent.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SHSPhoneComponent.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartHome Promo/Pods-SmartHome Promo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C473EAFB5124D0A5891DA77D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartHome Promo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D77E12620EAB54B004D8DC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D77E13220EAB54B004D8DC1 /* ViewController.m in Sources */,
+				4D77E1D220EAB659004D8DC1 /* IntercomDetailViewController.m in Sources */,
+				4D77E20420EAB659004D8DC1 /* SipAccount.m in Sources */,
 				4D77E13D20EAB54F004D8DC1 /* main.m in Sources */,
+				4D77E1D820EAB659004D8DC1 /* SettingsTextFieldCell.m in Sources */,
+				4D77E1DE20EAB659004D8DC1 /* IntercomObject.m in Sources */,
+				4D77E1E420EAB659004D8DC1 /* ActivitySpinner.m in Sources */,
+				4D77E20620EAB659004D8DC1 /* SignInViewController.m in Sources */,
+				4D77E1E620EAB659004D8DC1 /* Constants.m in Sources */,
+				4D77E1FC20EAB659004D8DC1 /* DistrictManagementPage.m in Sources */,
+				4D77E1D420EAB659004D8DC1 /* SettingsButtonCell.m in Sources */,
+				4D77E1FA20EAB659004D8DC1 /* DistrictManagementButtonCell.m in Sources */,
+				4D77E1DC20EAB659004D8DC1 /* MainViewController.m in Sources */,
+				4D77E1FD20EAB659004D8DC1 /* AccountManager.m in Sources */,
+				4D77E1EB20EAB659004D8DC1 /* Mapper.m in Sources */,
+				4D77E20520EAB659004D8DC1 /* UserAccount.m in Sources */,
+				4D77E1EA20EAB659004D8DC1 /* ErrorHandler.m in Sources */,
+				4D77E1D620EAB659004D8DC1 /* SettingsViewController.m in Sources */,
+				4D77E1DF20EAB659004D8DC1 /* MyIntercomTableViewCell.m in Sources */,
+				4D77E1F620EAB659004D8DC1 /* DocumentsPage.m in Sources */,
+				4D77E1EE20EAB659004D8DC1 /* Reachability.m in Sources */,
+				4D77E1F720EAB659004D8DC1 /* DistrictInfoPage.m in Sources */,
+				4D77E1E720EAB659004D8DC1 /* CustomAlertView.m in Sources */,
+				4D77E20220EAB659004D8DC1 /* ResetAccessViewController.m in Sources */,
+				4D77E1F420EAB659004D8DC1 /* DocumentCell.m in Sources */,
+				4D77E1F220EAB659004D8DC1 /* DistrictInfoViewController.m in Sources */,
+				4D77E1E520EAB659004D8DC1 /* Categories.m in Sources */,
+				4D77E1EC20EAB659004D8DC1 /* NetworkLoader.m in Sources */,
+				4D77E1D120EAB659004D8DC1 /* IntercomManager.m in Sources */,
+				4D77E1F820EAB659004D8DC1 /* DistrictInfoNewsCell.m in Sources */,
+				4D77E20020EAB659004D8DC1 /* SignInFormView.m in Sources */,
+				4D77E1DA20EAB659004D8DC1 /* MainTabBarController.m in Sources */,
 				4D77E12F20EAB54B004D8DC1 /* AppDelegate.m in Sources */,
+				4D77E1E220EAB659004D8DC1 /* MyIntercomsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4D77E13320EAB54B004D8DC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D77E13420EAB54B004D8DC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D77E13820EAB54F004D8DC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -281,6 +862,7 @@
 		};
 		4D77E14120EAB54F004D8DC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1EDFDDE814E04A4B69A1B65 /* Pods-SmartHome Promo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +880,7 @@
 		};
 		4D77E14220EAB54F004D8DC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4601099D3E112E20ABFFE78 /* Pods-SmartHome Promo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

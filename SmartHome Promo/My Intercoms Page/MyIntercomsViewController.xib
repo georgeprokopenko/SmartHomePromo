@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyIntercomsViewController">
+            <connections>
+                <outlet property="noDataView" destination="qKw-YB-vc1" id="4CT-K1-5gO"/>
+                <outlet property="reloadDataButton" destination="wgm-od-lxy" id="NVq-f2-ESh"/>
+                <outlet property="tableView" destination="5kW-DY-39A" id="mPL-gt-dJ1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5kW-DY-39A">
+                    <rect key="frame" x="380" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.090196078431372548" green="0.10588235294117647" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="rcT-og-lkM"/>
+                        <outlet property="delegate" destination="-1" id="igV-Vo-dyU"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKw-YB-vc1">
+                    <rect key="frame" x="46.5" y="247" width="282" height="173"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgm-od-lxy">
+                            <rect key="frame" x="11" y="133" width="260" height="35"/>
+                            <color key="backgroundColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="260" id="ags-6c-Cze"/>
+                                <constraint firstAttribute="height" constant="35" id="y6M-pK-hgj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="Повторить">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="loadIntercoms" destination="-1" eventType="touchUpInside" id="2ue-2N-Iqh"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehy-X6-bpN">
+                            <rect key="frame" x="2" y="73" width="278" height="36"/>
+                            <string key="text">Не удалось загрузить список дверей,
+проверьте качество подключения.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="errorFace" translatesAutoresizingMaskIntoConstraints="NO" id="FiU-NF-tap">
+                            <rect key="frame" x="113" y="12.5" width="56" height="38.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="IJX-ix-bXa"/>
+                                <constraint firstAttribute="width" secondItem="FiU-NF-tap" secondAttribute="height" multiplier="29:20" id="jIu-zK-JlU"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ehy-X6-bpN" firstAttribute="top" secondItem="FiU-NF-tap" secondAttribute="bottom" constant="22" id="AKP-Es-Ec9"/>
+                        <constraint firstAttribute="height" constant="173" id="HEi-07-K5x"/>
+                        <constraint firstAttribute="width" constant="282" id="M0l-1g-Ps2"/>
+                        <constraint firstItem="Ehy-X6-bpN" firstAttribute="leading" secondItem="qKw-YB-vc1" secondAttribute="leading" constant="2" id="eQU-vv-zF6"/>
+                        <constraint firstItem="wgm-od-lxy" firstAttribute="top" secondItem="Ehy-X6-bpN" secondAttribute="bottom" constant="24" id="gLi-8j-ABs"/>
+                        <constraint firstAttribute="trailing" secondItem="Ehy-X6-bpN" secondAttribute="trailing" constant="2" id="gbU-gh-6KY"/>
+                        <constraint firstItem="wgm-od-lxy" firstAttribute="centerX" secondItem="qKw-YB-vc1" secondAttribute="centerX" id="jXh-xD-jfz"/>
+                        <constraint firstAttribute="bottom" secondItem="wgm-od-lxy" secondAttribute="bottom" constant="5" id="o2N-uJ-IzY"/>
+                        <constraint firstItem="FiU-NF-tap" firstAttribute="centerX" secondItem="qKw-YB-vc1" secondAttribute="centerX" id="vjg-Wl-Y1C"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.090196078431372548" green="0.10588235294117647" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qKw-YB-vc1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1eL-ur-yxX"/>
+                <constraint firstAttribute="trailing" secondItem="5kW-DY-39A" secondAttribute="trailing" id="5bg-Es-kpv"/>
+                <constraint firstAttribute="bottom" secondItem="5kW-DY-39A" secondAttribute="bottom" id="5j0-qm-D44"/>
+                <constraint firstItem="5kW-DY-39A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bvt-G2-YRk"/>
+                <constraint firstItem="qKw-YB-vc1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XBc-o9-4vB"/>
+                <constraint firstItem="5kW-DY-39A" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YVx-x7-xno"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+        <navigationItem title="Title" id="Xd4-Rj-E8x"/>
+    </objects>
+    <resources>
+        <image name="errorFace" width="87" height="60"/>
+    </resources>
+</document>

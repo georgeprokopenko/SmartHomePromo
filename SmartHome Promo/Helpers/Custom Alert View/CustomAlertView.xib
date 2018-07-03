@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertView">
+            <connections>
+                <outlet property="dialogButton" destination="WSY-Ls-Y3x" id="wCy-TQ-Q9i"/>
+                <outlet property="dialogLabel" destination="9tW-rw-Bse" id="XCO-3o-EOa"/>
+                <outlet property="dialogView" destination="lWL-jl-GNk" id="Veb-mF-asM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWL-jl-GNk">
+                    <rect key="frame" x="42" y="264.5" width="290" height="137"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tW-rw-Bse">
+                            <rect key="frame" x="17.5" y="22" width="255.5" height="41"/>
+                            <string key="text">Вы можете закрепить не более 
+5-ти дверей </string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSY-Ls-Y3x">
+                            <rect key="frame" x="130" y="85" width="30" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="ОК"/>
+                            <connections>
+                                <action selector="dismissSelf:" destination="-1" eventType="touchUpInside" id="uI5-HT-ASm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14901960780000001" green="0.1764705882" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="9tW-rw-Bse" firstAttribute="leading" secondItem="lWL-jl-GNk" secondAttribute="leading" constant="17" id="41E-jc-TKc"/>
+                        <constraint firstItem="WSY-Ls-Y3x" firstAttribute="top" secondItem="9tW-rw-Bse" secondAttribute="bottom" constant="22" id="A7X-ov-SUr"/>
+                        <constraint firstAttribute="width" constant="290" id="B0P-oV-00r"/>
+                        <constraint firstAttribute="trailing" secondItem="9tW-rw-Bse" secondAttribute="trailing" constant="17" id="IcN-Xp-VKK"/>
+                        <constraint firstAttribute="bottom" secondItem="WSY-Ls-Y3x" secondAttribute="bottom" constant="22" id="KTe-ep-vQR"/>
+                        <constraint firstItem="WSY-Ls-Y3x" firstAttribute="centerX" secondItem="lWL-jl-GNk" secondAttribute="centerX" id="XAg-fy-O5E"/>
+                        <constraint firstItem="9tW-rw-Bse" firstAttribute="centerX" secondItem="lWL-jl-GNk" secondAttribute="centerX" id="fKf-5G-Nin"/>
+                        <constraint firstItem="9tW-rw-Bse" firstAttribute="top" secondItem="lWL-jl-GNk" secondAttribute="top" constant="22" id="sxr-Ax-lpq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.050980392159999999" green="0.058823529409999999" blue="0.074509803920000006" alpha="0.89768835619999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lWL-jl-GNk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GWg-L3-W98"/>
+                <constraint firstItem="lWL-jl-GNk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cPc-qe-cda"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

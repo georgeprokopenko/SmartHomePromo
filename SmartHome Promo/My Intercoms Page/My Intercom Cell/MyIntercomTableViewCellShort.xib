@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MyIntercomCellShort" rowHeight="108" id="cDe-ob-hZo" customClass="MyIntercomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cDe-ob-hZo" id="h8C-w6-t8H">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1U-uH-OLj">
+                        <rect key="frame" x="245" y="22.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Zja-N8-unX"/>
+                            <constraint firstAttribute="height" constant="50" id="eti-yO-mTx"/>
+                        </constraints>
+                        <state key="normal" image="favoriteButton"/>
+                        <state key="selected" image="unfavoriteButton"/>
+                        <connections>
+                            <action selector="favoriteButtonClicked:" destination="cDe-ob-hZo" eventType="touchUpInside" id="0Cv-h5-4Wb"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В избранное" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agO-qB-nLd">
+                        <rect key="frame" x="238" y="75.5" width="64" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nr8-Ea-TXd">
+                        <rect key="frame" x="10" y="7" width="300" height="80.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnR-RN-JWN">
+                                <rect key="frame" x="235" y="15.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NHu-wr-oJY"/>
+                                    <constraint firstAttribute="width" constant="50" id="hyh-63-smh"/>
+                                </constraints>
+                                <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="unlockDoorAction:" destination="cDe-ob-hZo" eventType="touchUpInside" id="JCp-yc-vDp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intercome Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIQ-pi-CAa">
+                                <rect key="frame" x="20" y="32" width="190" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="vLD-BV-teE">
+                                <rect key="frame" x="282" y="7" width="11" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="11" id="kuV-4R-7mQ"/>
+                                    <constraint firstAttribute="height" constant="11" id="yO8-bO-X8F"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960784313725" green="0.1764705882352941" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qIQ-pi-CAa" firstAttribute="centerY" secondItem="Nr8-Ea-TXd" secondAttribute="centerY" id="0wv-q4-lvf"/>
+                            <constraint firstItem="vLD-BV-teE" firstAttribute="top" secondItem="Nr8-Ea-TXd" secondAttribute="top" constant="7" id="4VY-o1-Zdo"/>
+                            <constraint firstItem="qIQ-pi-CAa" firstAttribute="leading" secondItem="Nr8-Ea-TXd" secondAttribute="leading" constant="20" id="Mf8-e0-AdH"/>
+                            <constraint firstAttribute="trailing" secondItem="vLD-BV-teE" secondAttribute="trailing" constant="7" id="Pow-52-fsU"/>
+                            <constraint firstAttribute="trailing" secondItem="AnR-RN-JWN" secondAttribute="trailing" constant="15" id="q9n-Vu-283"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="W1U-uH-OLj" secondAttribute="trailing" constant="25" id="6Fl-6y-k3W"/>
+                    <constraint firstAttribute="bottom" secondItem="Nr8-Ea-TXd" secondAttribute="bottom" constant="7" id="KHe-s3-CWt"/>
+                    <constraint firstItem="AnR-RN-JWN" firstAttribute="leading" secondItem="qIQ-pi-CAa" secondAttribute="trailing" constant="25" id="Pdk-vX-wrs"/>
+                    <constraint firstItem="W1U-uH-OLj" firstAttribute="centerY" secondItem="h8C-w6-t8H" secondAttribute="centerY" id="Wch-li-tRP"/>
+                    <constraint firstItem="W1U-uH-OLj" firstAttribute="centerX" secondItem="agO-qB-nLd" secondAttribute="centerX" id="fdq-UQ-nYX"/>
+                    <constraint firstItem="agO-qB-nLd" firstAttribute="top" secondItem="W1U-uH-OLj" secondAttribute="bottom" constant="3" id="gE4-SC-yib"/>
+                    <constraint firstItem="AnR-RN-JWN" firstAttribute="centerY" secondItem="h8C-w6-t8H" secondAttribute="centerY" id="k6E-G6-fdJ"/>
+                    <constraint firstAttribute="trailing" secondItem="Nr8-Ea-TXd" secondAttribute="trailing" constant="10" id="qLa-Oh-q36"/>
+                    <constraint firstItem="Nr8-Ea-TXd" firstAttribute="top" secondItem="h8C-w6-t8H" secondAttribute="top" constant="7" id="sHS-fF-4li"/>
+                    <constraint firstItem="Nr8-Ea-TXd" firstAttribute="leading" secondItem="h8C-w6-t8H" secondAttribute="leading" constant="10" id="wci-jR-fTO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="favoriteButton" destination="W1U-uH-OLj" id="kGO-to-PK4"/>
+                <outlet property="favoriteLabel" destination="agO-qB-nLd" id="toh-wX-CdA"/>
+                <outlet property="intercomeNameLabel" destination="qIQ-pi-CAa" id="HyC-zY-J6m"/>
+                <outlet property="isFavoriteStarView" destination="vLD-BV-teE" id="JrX-SZ-C2v"/>
+                <outlet property="lockButton" destination="AnR-RN-JWN" id="Hv6-BE-QgJ"/>
+                <outlet property="mainView" destination="Nr8-Ea-TXd" id="kMg-ij-gv4"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="-55"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="closeButton" width="100" height="100"/>
+        <image name="favoriteButton" width="75" height="75"/>
+        <image name="star" width="18" height="17"/>
+        <image name="unfavoriteButton" width="75" height="75"/>
+    </resources>
+</document>

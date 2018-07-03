@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingsTextFieldCell" rowHeight="82" id="KGk-i7-Jjw" customClass="SettingsTextFieldCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Лицевой счет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnW-FJ-NTm">
+                        <rect key="frame" x="30" y="6" width="80.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Состоит из 9 цифр" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="34b-Uw-kCI">
+                        <rect key="frame" x="30" y="27" width="260" height="35"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="ZwY-Ay-LF7"/>
+                        </constraints>
+                        <color key="textColor" red="0.14901960780000001" green="0.1764705882" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" red="0.090196078430000007" green="0.1058823529" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="34b-Uw-kCI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Bdr-7S-YF9"/>
+                    <constraint firstAttribute="trailing" secondItem="34b-Uw-kCI" secondAttribute="trailing" constant="30" id="Jah-WE-QIX"/>
+                    <constraint firstItem="gnW-FJ-NTm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="PYG-XO-Vku"/>
+                    <constraint firstItem="34b-Uw-kCI" firstAttribute="top" secondItem="gnW-FJ-NTm" secondAttribute="bottom" constant="6" id="RNB-5H-PMb"/>
+                    <constraint firstAttribute="bottom" secondItem="34b-Uw-kCI" secondAttribute="bottom" constant="6.5" id="aqL-PR-8nO"/>
+                    <constraint firstItem="gnW-FJ-NTm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="pdq-88-kDG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.090196078430000007" green="0.1058823529" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="textField" destination="34b-Uw-kCI" id="OJ7-8T-Adb"/>
+                <outlet property="title" destination="gnW-FJ-NTm" id="R6x-29-Qis"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="71"/>
+        </tableViewCell>
+    </objects>
+</document>
